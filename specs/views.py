@@ -180,4 +180,4 @@ class UpdateProductFeatureView(View):
     def get(self, request, *args, **kwargs):
         categories = Category.objects.all()
         context = {'categories': categories}
-        return render((request, 'update_product_features.html', context))
+        return render(request, 'update_product_features.html', context)
